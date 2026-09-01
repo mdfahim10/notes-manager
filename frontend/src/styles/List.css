@@ -1,37 +1,175 @@
+
 .page-header {
     text-align: center;
-    margin: 40px 0 25px;
+
+    margin: 40px 0 30px;
+
     color: rgb(74, 137, 116);
-    font-size: 32px;
+
+    font-size: 34px;
+
     font-weight: bold;
 }
 .note-list {
-    width: 90%;
-    max-width: 1100px;
-    margin: 40px auto;
+    width: 92%;
+
+    max-width: 1250px;
+
+    margin: 0 auto;
+
     padding: 0;
+
     display: grid;
-    grid-template-columns: 80px 1.2fr 1fr 2fr 1.5fr;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+
+    grid-template-columns:
+        80px 1.3fr 1fr 2fr 1.6fr 160px;
+
+    border: 1px solid #dce5e1;
+
+    border-radius: 12px;
+
     overflow: hidden;
+
+    background-color: white;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
 }
 .list-header {
-    background-color: rgb(74, 137, 116);
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 15px;
     list-style: none;
+
+    padding: 19px 20px;
+
+    background-color: #f4f8f6;
+
+    color: #245b49;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    border-bottom: 1px solid #dce5e1;
+}
+
+.action-header {
+    text-align: center;
 }
 .list-item {
-    padding: 15px;
-    border-top: 1px solid #ddd;
-    list-style: none;
-    font-size: 16px;
-    color: #333;
+    min-width: 0;
+
+    padding: 22px 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    border-bottom: 1px solid #e6ebe9;
+
+    color: #303633;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
     word-break: break-word;
 }
+
 .list-item:hover {
-    background-color: #f2f2f2;
+    background-color: #fafcfb;
+}
+.actions {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 15px;
+}
+.actions button {
+    width: 40px;
+
+    height: 40px;
+
+    border-radius: 9px;
+
+    border: 1px solid transparent;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    transition: all 0.2s ease;
+}
+
+.actions button:hover {
+    transform: translateY(-2px);
+}
+.view-button {
+    color: #2563eb;
+
+    background-color: #f1f6ff;
+
+    border-color: #dbe8ff !important;
+}
+
+.view-button:hover {
+    background-color: #e2edff;
+
+    border-color: #bfd5ff !important;
+}
+.edit-button {
+    color: #d97706;
+
+    background-color: #fff7eb;
+
+    border-color: #fce7c7 !important;
+}
+
+.edit-button:hover {
+    background-color: #ffefd7;
+
+    border-color: #f8d9aa !important;
+}
+.delete-button {
+    color: #dc2626;
+
+    background-color: #fff1f1;
+
+    border-color: #fee0e0 !important;
+}
+
+.delete-button:hover {
+    background-color: #ffe4e4;
+
+    border-color: #fecaca !important;
+}
+@media (max-width: 1000px) {
+
+    .note-list {
+        width: 95%;
+
+        min-width: 950px;
+    }
+
+    body {
+        overflow-x: auto;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .page-header {
+        font-size: 28px;
+
+        margin-top: 30px;
+    }
 }

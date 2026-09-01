@@ -25,11 +25,8 @@ export default function AddNotes() {
         <div>
             <h1 className="page-header">Add New Note</h1>
             <div className="container">
-
                 <form>
-
                     <label>Topic</label>
-
                     <input
                         onChange={(event) => setNoteData({
                             ...noteData,
@@ -39,9 +36,7 @@ export default function AddNotes() {
                         name="topic"
                         placeholder="Enter topic"
                     />
-
                     <label>Subject</label>
-
                     <input
                         onChange={(event) => setNoteData({
                             ...noteData,
@@ -51,9 +46,7 @@ export default function AddNotes() {
                         name="subject"
                         placeholder="Enter subject"
                     />
-
                     <label>Description</label>
-
                     <textarea
                         onChange={(event) => setNoteData({
                             ...noteData,
@@ -63,9 +56,7 @@ export default function AddNotes() {
                         name="description"
                         placeholder="Enter notes in details"
                     />
-
                     <label>Tags</label>
-
                     <textarea
                         onChange={(event) => setNoteData({
                             ...noteData,
@@ -75,7 +66,6 @@ export default function AddNotes() {
                         name="tags"
                         placeholder="Enter points covered in this note"
                     />
-
                     <button
                         type="button"
                         className="submit"
@@ -83,11 +73,8 @@ export default function AddNotes() {
                     >
                         Add Note
                     </button>
-
                 </form>
-
             </div>
         </div>
     );
-
 }
