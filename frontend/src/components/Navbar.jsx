@@ -5,7 +5,7 @@ export default function Navbar(){
 
     return (
         <nav className="navbar">
-            <div className="logo">Notes-Manager</div>
+            <div className="logo">Notes</div>
             <ul className="nav-link">
                 <li>
                     <Link to={"/"}>All Notes</Link>

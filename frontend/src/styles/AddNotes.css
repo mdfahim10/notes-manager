@@ -1,0 +1,66 @@
+.page-header {
+    text-align: center;
+    margin: 40px 0 25px;
+    color: rgb(74, 137, 116);
+    font-size: 32px;
+    font-weight: bold;
+}.container {
+    width: 90%;
+    max-width: 750px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(74, 137, 116);
+    font-size: 30px;
+}
+.container form {
+    display: flex;
+    flex-direction: column;
+}
+.container label {
+    margin-bottom: 8px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #333;
+}
+.container input,
+.container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: inherit;
+    outline: none;
+}
+.container input:focus,
+.container textarea:focus {
+    border-color: rgb(74, 137, 116);
+    box-shadow: 0 0 4px rgba(74, 137, 116, 0.3);
+}
+.container textarea {
+    resize: vertical;
+}
+.submit {
+    margin-top: 10px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(74, 137, 116);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.submit:hover {
+    background-color: rgb(58, 110, 93);
+}

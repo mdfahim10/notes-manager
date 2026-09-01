@@ -1,13 +1,14 @@
-import dotenv from "dotenv";
 import { MongoClient } from "mongodb";
+import dotenv from "dotenv";
 
 dotenv.config();
 
-const url = process.env.MONGO_URL;
+const client = new MongoClient(process.env.MONGO_URL);
 
-const client = new MongoClient(url);
-
-const connection = client.connect();
+const connection = async () => {
+    const db = await client.connect();
+    return db.db("notes-manager");
+};
 
 const collectionName = "notes";
 
